@@ -1,0 +1,50 @@
+
+<!doctype html>
+<lang html="en">
+
+<!--
+
+Author:  Diya Patel
+Class:   Web & Distributed Programming
+Project: Map Mania v1
+Credits: Map Mania lite
+Description: This is the first version of Map Mania that I am creating for Programming Assignment 3.
+-->
+
+  <head>
+      <meta charset="UTF-8">
+      <title>Simple Map</title>
+      
+      <script src ="map-mania.js"></script>
+      <style>
+
+        #myMapID {
+        height: 100%;
+        width:100%;
+        }
+      
+      /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        } 
+      </style>
+
+  </head>
+  <body onload="initMap()">
+    <h1>MAP MANIA</h1>
+
+    <div id="myMapID"></div>
+    <div id="zoom"></div>
+    
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjtErQru5SI88Orp0xXLvR4Yq1zJ8OgQ4
+      &callback=initMap&v=weekly"
+      async defer></script>
+    
+
+</body>
+    
